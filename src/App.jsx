@@ -12,7 +12,7 @@ const App = () => {
         price: 12,
         strength: 6,
         agility: 4,
-        img: './public/images/survivor.png',
+        img: 'images/survivor.png',
       },
       {
         id: 2,
@@ -20,7 +20,7 @@ const App = () => {
         price: 10,
         strength: 5,
         agility: 5,
-        img: './public/images/scavanger.png',
+        img: '/images/scavanger.png',
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ const App = () => {
         price: 18,
         strength: 7,
         agility: 8,
-        img: './public/images/shadow.png',
+        img: '/images/shadow.png',
       },
       {
         id: 4,
@@ -36,7 +36,7 @@ const App = () => {
         price: 14,
         strength: 7,
         agility: 6,
-        img: './public/images/tracker.png',
+        img: '/images/tracker.png',
       },
       {
         id: 5,
@@ -44,7 +44,7 @@ const App = () => {
         price: 20,
         strength: 6,
         agility: 8,
-        img: './public/images/sharpshooter.png',
+        img: '/images/sharpshooter.png',
       },
       {
         id: 6,
@@ -52,7 +52,7 @@ const App = () => {
         price: 15,
         strength: 5,
         agility: 7,
-        img: './public/images/medic.png',
+        img: '/images/medic.png',
       },
       {
         id: 7,
@@ -60,7 +60,7 @@ const App = () => {
         price: 16,
         strength: 6,
         agility: 5,
-        img: './public/images/engineer.png',
+        img: '/images/engineer.png',
       },
       {
         id: 8,
@@ -68,7 +68,7 @@ const App = () => {
         price: 11,
         strength: 8,
         agility: 3,
-        img: './public/images/brawler.png',
+        img: '/images/brawler.png',
       },
       {
         id: 9,
@@ -76,7 +76,7 @@ const App = () => {
         price: 17,
         strength: 5,
         agility: 9,
-        img: './public/images/infiltrator.png',
+        img: '/images/infiltrator.png',
       },
       {
         id: 10,
@@ -84,7 +84,7 @@ const App = () => {
         price: 22,
         strength: 7,
         agility: 6,
-        img: './public/images/leader.png',
+        img: '/images/leader.png',
       },
     ]
   ); 
@@ -111,7 +111,7 @@ const App = () => {
       {team.map((fighter, index) => (
         <li key={index}>
           <img src={fighter.img} alt={fighter.name} />
-          <h3>{fighter.name}</h3>
+          <h2>{fighter.name}</h2>
           <p>Strength: {fighter.strength}</p>
           <p>Agility: {fighter.agility}</p>
         </li>
