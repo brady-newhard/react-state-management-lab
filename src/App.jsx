@@ -104,12 +104,27 @@ const App = () => {
     setMoney(money + fighter.price);
     setZombieFighters([...zombieFighters, removeZombie]);
   }
+  let totalStrength = 0;
+    team.forEach((fighter) => {
+      totalStrength += fighter.strength;
+    });
+
+  let totalAgility = 0; 
+    team.forEach((fighter) => {
+      totalAgility += fighter.agility;
+    });
+    
+  // const totalStrength = team.reduce((total, fighter) => total + fighter.strength, 0);
+  // const totalAgility = team.reduce((total, fighter) => total + fighter.agility, 0);
+
   return (
     <>
     <h1>My Zombie Fighter Team</h1>
       <h3>Current Money: ${money}</h3>
+      <h3>Total Strength: {totalStrength}</h3>
+      <h3>Total Agility: {totalAgility}</h3>
       {team.length === 0 ? (
-      <h3>Pick some zombie fighters for your team!</h3>) : (
+      <h2>Pick some zombie fighters for your team!</h2>) : (
       <ul>
         {team.map((fighter, index) => (
           <li key={index}>
